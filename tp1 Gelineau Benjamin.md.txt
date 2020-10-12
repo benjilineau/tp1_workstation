@@ -1,0 +1,6 @@
+nom de l'appareil: DESKTOP-ON7BJGL
+os :Microsoft Windows 10 Professionnel
+x64-based PC
+Intel i7 10750H : i7 la gamme du processeur ,10eme générations, 7 semble désigner où se situe le processeur à l'intérieur de la gamme, 5 est le tdp, H = hautes performances
+nbr de coeurs : 6/ 12 threads
+carte graphique: gtx 1650ti 4go + intel graphic
