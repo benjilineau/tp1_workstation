@@ -87,10 +87,21 @@ La commande s’est terminée correctement.
 * commande utilisée : "tasklist"
 
 ```
-wininit.exe // initialisation du windows
+wininit.exe                    852 Services                   0     6 764 Ko
 svchost.exe                   1732 Services                   0     7 808 Ko
+WmiPrvSE.exe                  7268 Services                   0    29 552 Ko
+rundll32.exe                  4716 Console                    2     9 312 Ko
+fontdrvhost.exe               1204 Services                   0     2 768 Ko
 ```
+ Wininit.exe est responsable de l'exécution du processus d'initialisation Windows.
+
 svchost.exe est un important processus Windows associé avec le service de systèmes Windows. Ce processus exécute des Bibliothèques de liens dynamiques
+
+Le processus wmiprvse.exe (wmiprvse signifiant Microsoft Windows Management Instrumentation ) est un processus générique permettant la gestion des clients sous Windows XP.
+
+RunDLL est un utilitaire de ligne de commande Windows. et un composant Windows essentiel.
+
+Le fichier authentique fontdrvhost.exe est un composant logiciel de Windows font driver management de Microsoft.
 # Network
 
 * commande utilisé pour trouver les infos sur mes catres réseaux : "systeminfo"
@@ -169,5 +180,3 @@ Nom de la connexion : Connexion réseau Bluetooth //carte servant à connecter 
  [chrome.exe]
   TCP    192.168.0.15:54599     40.74.219.49:https     ESTABLISHED
   ```
-
-
