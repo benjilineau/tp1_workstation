@@ -58,6 +58,15 @@ marque et modele disque dur : PC611 NVMe SK hynix 1TB
   Volume 3         DELLSUPPORT  NTFS   Partition   1400 M   Sain
   Volume 4         ESP          FAT32  Partition    190 M   Sain       Système
   ```
+volume 0 : partition liée au stockage de données basique
+
+volume 1 : L'outils Winretools est la partition sur   laquelle le système démarre pour les outils de      réparation en cas de problèmes avec le système. 
+
+volume 2 : Elle sert à dupliquer le contenu intégral ou certaines partitions du disque dur afin d’obtenir une copie de sauvegarde. Les fichiers copiés peuvent ensuite être enregistrés sur un autre support : clé USB, CD/DVD, disque dur externe, etc.
+
+volume 3 : Récupère les préférences d'utilisations sur l'ordinateur.
+
+volume 4 :  esp une partition système qui contient les informations de démarrage du système d'exploitation sur les disques GPT et ordinateur en Bios UEFI.
 
 
 # users
@@ -75,13 +84,13 @@ La commande s’est terminée correctement.
 
 # Processus
 
-* tasklist
+* commande utilisée : "tasklist"
 
 ```
 wininit.exe // initialisation du windows
-
+svchost.exe                   1732 Services                   0     7 808 Ko
 ```
-
+svchost.exe est un important processus Windows associé avec le service de systèmes Windows. Ce processus exécute des Bibliothèques de liens dynamiques
 # Network
 
 * commande utilisé pour trouver les infos sur mes catres réseaux : "systeminfo"
