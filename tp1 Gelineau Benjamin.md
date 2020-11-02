@@ -313,3 +313,43 @@ VOICI LE TEST DU PING:
 test du ping :17ms
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Gestion de soft
+
+- L'interet d'un gestionnaire de paquets est qu'il automatise le processus d'installation mais aussi de désinstallation. De plus il permet de mettre à jour toutes les applications avec une simple commande ou d'installé une version antérieur d'un logiciel ce qui n'est pas toujours disponible sur internet. Le téléchargement est aussi 
+
+- Un gestionnaire de paquets est aussi intéressant au niveau sécurité car sur internet nous pouvons télécharger des logiciels de pleins de sources différentes et donc potentiellement contenant des malwares. Ceci est moins possible avec un gestionnaire de paquets car il n'y a qu'une source généralement pour un logiciel.
+
+- Pour finir l'identité de la personne téléchargant est protégé car la demande de téléchargement passe par un serveur tiers contrairement sur internet ou notre ip est accessible par le site web.
+
+## Nombre de paquets
+
+- commande utilisé pour obtenir la liste des paquets installés : "choco list -l"
+
+```
+Chocolatey v0.10.15
+chocolatey 0.10.15
+1 packages installed.
+```
+- La commande utilisé pour trouver la provenance d'un packet est : "choco info + nom du paquet"
