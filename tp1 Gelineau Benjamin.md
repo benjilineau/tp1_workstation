@@ -321,7 +321,7 @@ test du ping :17ms
 
 - L'intérêt d'un gestionnaire de paquets est qu'il automatise le processus d'installation mais aussi de désinstallation. De plus il permet de mettre à jour toutes les applications avec une simple commande ou d'installé une version antérieur d'un logiciel ce qui n'est pas toujours disponible sur internet. Le téléchargement est aussi plus rapide.
 
--Un gestionnaire de paquets est aussi intéressant au niveau sécurité car sur internet nous pouvons télécharger des logiciels de pleins de sources différentes et donc potentiellement contenant des malwares. Ceci est moins possible avec un gestionnaire de paquets car il n'y a qu'une source généralement pour un logiciel.
+- Un gestionnaire de paquets est aussi intéressant au niveau sécurité car sur internet nous pouvons télécharger des logiciels de pleins de sources différentes et donc potentiellement contenant des malwares. Ceci est moins possible avec un gestionnaire de paquets car il n'y a qu'une source généralement pour un logiciel.
 
 - Pour finir l'identité de la personne téléchargeant est protégé car la demande de téléchargement passe par un serveur tiers contrairement sur internet ou notre ip est accessible par le site web.
 
