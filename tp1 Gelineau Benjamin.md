@@ -313,27 +313,9 @@ VOICI LE TEST DU PING:
 test du ping :17ms
 ```
 
+## Scripting 2
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Voir dans les fichers du git.
 
 # Gestion de soft
 
@@ -353,3 +335,32 @@ chocolatey 0.10.15
 1 packages installed.
 ```
 - La commande utilisé pour trouver la provenance d'un packet est : "choco info + nom du paquet"
+
+## Connection à la machine virtuelle
+
+- Commande utilisée sur powershell : " ssh root@192.168.120.50"
+
+```
+PS C:\Users\Benjamin> ssh root@192.168.120.50
+root@192.168.120.50's password:
+Last login: Thu Nov 12 14:50:57 2020
+[root@tpworstation ~]#
+```
+
+- Pour le partage de fichier entre ma vm et mon pc, j'ai tout d’abord activé le « support de partage smb CIFS » dans le « panneau de configuration », « désinstaller un programme », « Activer ou désactiver des fonctionnalités Windows. ».
+
+![](https://i.imgur.com/Dj3Fuxq.png)
+
+- Puis j’ai créé un fichier share sur mon bureau, j’ai fait un clic droit « propriété », « partager », « partage avancé », valider la case « partager se ficher » puis « autorisation » et cocher contrôle totale pour tous les utilisateurs.
+
+![](https://i.imgur.com/1kyDZ0f.png)
+
+- Je suis ensuite aller dans virtualbox, j’ai tapé la commande : ```yum install -y cifs-utils```
+![](https://i.imgur.com/67bMiCU.png)
+- Puis j’ai créé le dossier ou on accèdera au partage : ```mkdir /opt/partage```
+ ![](https://i.imgur.com/XbmnQ0j.png)
+- Je suis retourné sur mon powershell connecté à ma vm puis je lance la commande :``` mount -t cifs -o username=Benjamin,password=mdpcaché //192.168.120.1/share /opt/partage```
+![](https://i.imgur.com/dsBpVo8.png)
+- Et pour vérifier si le dossier test.txt que j'ai crée dans le dossier share un fichier test.txt puis j'ai lancé la commande ls.
+![](https://i.imgur.com/xbsRnNl.png)
+
