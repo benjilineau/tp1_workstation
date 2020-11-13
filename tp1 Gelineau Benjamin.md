@@ -327,7 +327,7 @@ test du ping :17ms
 
 ## Nombre de paquets
 
-- commande utilisé pour obtenir la liste des paquets installés : "choco list -l"
+- Commande utilisée pour obtenir la liste des paquets installés : "choco list -l"
 
 ```
 Chocolatey v0.10.15
