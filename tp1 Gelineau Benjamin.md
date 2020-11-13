@@ -361,6 +361,6 @@ Last login: Thu Nov 12 14:50:57 2020
  ![](https://i.imgur.com/XbmnQ0j.png)
 - Je suis retourné sur mon powershell connecté à ma vm puis je lance la commande :``` mount -t cifs -o username=Benjamin,password=mdpcaché //192.168.120.1/share /opt/partage```
 ![](https://i.imgur.com/8es8Rp0.png)
-- Et pour vérifier si le dossier test.txt que j'ai crée dans le dossier share un fichier test.txt puis j'ai lancé la commande ls.
+- Et pour vérifier si le partage fonctionnait j'ai crée dans le dossier share un fichier test.txt puis j'ai lancé la commande ls.
 ![](https://i.imgur.com/xbsRnNl.png)
 
